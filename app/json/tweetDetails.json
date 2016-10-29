@@ -1,0 +1,77 @@
+{
+    "userTweetDetails": [{
+        "id": "photos",
+        "tweetTitle": "Tweets",
+        "tweetCount": "200"
+    }, {
+        "id": "videos",
+        "tweetTitle": "Photo/Video",
+        "tweetCount": "200"
+    }, {
+        "id": "follow",
+        "tweetTitle": "Following",
+        "tweetCount": "200"
+    }, {
+        "id": "follower",
+        "tweetTitle": "Followers",
+        "tweetCount": "1M"
+    }],
+    "myTweets": [{
+        "id": "tweet1",
+        "profileId": "kerem",
+        "profileName": "Kerem Suer",
+        "profileImage": "images/tweet1.png",
+        "tweetTime": "2m",
+        "tweet": {
+            "tweetText": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+            "tweetImage": "",
+            "tweetVideo": ""
+        }
+    }, {
+        "id": "tweet2",
+        "profileId": "axel_herrmann",
+        "profileName": "AxellHerrmann",
+        "profileImage": "images/tweet2.png",
+        "tweetTime": "1h",
+        "tweet": {
+            "tweetText": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "tweetImage": "",
+            "tweetVideo": ""
+        }
+    }, {
+        "id": "tweet3",
+        "profileId": "kerem",
+        "profileName": "Kerem Suer",
+        "profileImage": "images/tweet1.png",
+        "tweetTime": "5h",
+        "tweet": {
+            "tweetText": "",
+            "tweetImage": "",
+            "tweetVideo": "videos/movie.mp4"
+        }
+    }, {
+        "id": "tweet4",
+        "profileId": "kerem",
+        "profileName": "Kerem Suer",
+        "profileImage": "images/tweet1.png",
+        "tweetTime": "Yesterday",
+        "tweet": {
+            "tweetText": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+            "tweetImage": "",
+            "tweetVideo": ""
+        }
+    }],
+    "shareIconOpts": [{
+        "id": "icon1",
+        "iClass": "fa fa-share"
+    }, {
+        "id": "icon2",
+        "iClass": "fa fa-star"
+    }, {
+        "id": "icon3",
+        "iClass": "fa fa-refresh"
+    }, {
+        "id": "icon4",
+        "iClass": "fa fa-ellipsis-h"
+    }]
+}

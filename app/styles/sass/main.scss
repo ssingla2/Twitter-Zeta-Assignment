@@ -1,0 +1,197 @@
+// bower:scss
+@import "../font-awesome/scss/font-awesome.scss";
+// endbower
+
+@import 'variables';
+@import 'header';
+
+body {
+  padding: 0;
+  margin:0;
+  font-family:$font-roboto;
+}
+
+.mytweet {
+  background-color:#f2eee8;
+  .tweetDetails {
+    overflow: hidden;
+    margin: 45px auto;
+    font-size: 1.2em;
+    background-color:$color-primary;
+    ul{
+      margin: 0 auto;
+      padding: 0;
+      list-style-type: none;
+      li {
+        float:left;
+        text-align:center;
+        a{
+          text-decoration:none;
+          span{
+            display:block;
+          }
+          span.title {
+            padding-top:15px;
+            font-size: 0.8em;
+            color:$color-icon;
+            text-transform:uppercase;
+          }
+          span.count {
+            padding-bottom:15px;
+            font-size:1em;
+            color:#605e58;
+            font-weight:bold;
+          }
+        }
+      }
+      li.active{
+          border-bottom:4px solid $color-tweet-theme;
+      }
+    }
+  } 
+
+  .tweetComments ul {
+    padding:0;
+    background-color:$color-primary;
+    li{
+      list-style-type:none;
+    }
+    .tweets{
+      overflow:hidden;
+      border-bottom: 1px solid #f1ede8;
+    }
+    .shareTweet, .profileImage {
+      float:left;
+      margin-top:30px;
+      margin-bottom: 30px;
+    }
+    .profileImage span{
+      padding-left:1.5em;
+      display:inline-block;
+    }
+    .shareTweet {
+      .user-info{
+        padding-top: 4px;   
+      }
+      .profileName {
+        font-weight:bold;
+        color:#57575f;
+      }
+      .profileId, .tweetTime {
+        color:$color-icon;
+        font-size:0.9em
+      }
+      .tweetTime{
+        margin-top:2px;
+      }
+      .tweetText p{
+        font-size:1em;
+        color:#605e58;
+      }
+      .shareOpt a {
+        color:$color-icon;
+        font-size: 0.9em;;
+      }
+    }
+
+  }
+
+}
+
+@media only screen and (max-width:1240px){
+  header{
+    form.search{
+      margin-left:30%;
+    }
+  }
+}
+@media only screen and (max-width:1018px){
+  header{
+    form.search{
+      margin-left:20%;
+    }
+  }
+}
+@media only screen and (max-width:890px){
+  header{
+    form.search{
+      margin-left:10%;
+    }
+  }
+  .mytweet .tweetComments ul .profileImage span{
+    padding-left:0.4em
+  }
+  .mytweet .tweetComments ul .shareTweet .tweetText p{
+    font-size:0.9em
+  }
+}
+@media only screen and (max-width:768px){
+  header{
+    form.search{
+      margin-left:0%;
+    }
+  }
+  .profileImage img{
+    width:35px;
+  }
+}
+
+@media only screen and (max-width:680px){
+  header{
+    form.search{
+      margin-left:0%;
+    }
+    .twitterLogo{
+      display:none;
+    }
+    .myAccount,.navIcons{
+      width:50%
+    }
+    .myAccount{
+      float:right;
+    }
+  }
+  .mytweet .tweetDetails ul li a span.title{
+    font-size:0.6em;
+  }
+  .mytweet .tweetDetails ul li a span.count{
+     font-size:0.9em;
+      padding-bottom:18px;
+  }
+}
+@media only screen and (max-width:550px) and (min-width:412px){
+  header{
+    .navIcons{
+      width:20%
+    }
+    .myAccount{
+      float:right;
+      width:70%
+    }
+    .navIcons li:not(.homeIcon){
+      display:none;
+    }
+  }
+  .profileImage img{
+    width:32px;
+  }
+  .mytweet .tweetDetails ul {
+    li a {
+      span.title{
+        font-size:0.5em;
+      }
+      span.count{
+        font-size:0.8em;
+      }
+    }
+    .shareTweet{
+     .profileId,.tweetTime{
+      font-size:0.7em;
+     }
+     .tweetTime{
+      margin-top:5px;
+     }
+    }
+  }
+}
+

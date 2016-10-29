@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>Twitter Zeta Assignment</title>
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width">
+      <!-- Font-Awesome-Css , main.css , Basscss.css , Fonts -->
+      <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="styles/css/main.css" type="text/css">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/basscss/8.0.3/css/basscss.min.css" rel="stylesheet" type="text/css">
+      <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet" type="text/css">
+      <!-- Font-Awesome-Css , main.css , Basscss.css , Fonts -->
+   </head>
+   <body ng-app="twitterZetaApp">
+      <header>
+         <nav class="col col-5 navIcons">
+            <ul>
+               <li class="homeIcon">
+                  <a href="javascript:void(0)" class="home border circle" title="My Home Page" >
+                  <i class="fa fa-pagelines"></i>
+                  </a>
+               </li>
+               <li>
+                  <a href="javascript:void(0)" class="border circle" title="My Notifications">
+                  <i class="fa fa-bell-o"></i>
+                  </a>
+               </li>
+               <li>
+                  <a href="javascript:void(0)" class="border circle" title="My Messages" >
+                  <i class="fa fa-envelope-o"></i>
+                  </a>
+               </li>
+               <li class="activeOpt">
+                  <a href="javascript:void(0)" class="border circle" title="My Tweets" >
+                  <i class="fa fa-hashtag"></i>
+                  </a>
+               </li>
+            </ul>
+         </nav>
+         <div class="col col-2 twitterLogo">
+            <div class="mx-auto center twitterIcon"> 
+              <a href="javascript:void(0)" title="Welcome To Twitter">
+                <i class="fa fa-twitter">
+                </i> 
+              </a>
+            </div>
+         </div>
+         <div class="myAccount col col-5">
+            <form class="search left ml3">
+               <label for="search" class="hide">Search</label>
+               <input type="text" placeholder="Search" value="" id="search" />
+               <span class="searchIcon"> <i class="fa fa-search" aria-hidden="true"></i></span>
+            </form>
+            <a href="javascript:void(0)" title="My Account" class="right border circle mr2">
+            <img src="images/user.png" alt="My account">
+            </a>
+         </div>
+      </header>
+      <div class="mytweet clearfix">
+         <div ng-view=""></div>
+      </div>
+      <script src="bower_components/angular/angular.js"></script>
+      <script src="bower_components/angular-route/angular-route.js"></script>
+      <script src="scripts/app.js"></script>
+      <script src="scripts/controllers/main.js"></script>
+   </body>
+</html>

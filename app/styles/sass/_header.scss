@@ -1,0 +1,88 @@
+// Header styling 
+
+header {
+  background-color:$color-primary;
+  overflow:hidden;
+  width: 100%;
+  .navIcons ul {
+    overflow:hidden;
+    list-style-type: none;
+    padding:0;
+    margin:0;
+    li {
+      float:left;
+      padding: 0.8em 0.6em;
+    }
+    li.homeIcon {
+      padding: 0.6em 1em;
+      border-right: 1px solid #f1ede6;
+    }
+    li.homeIcon+li {
+      padding-left:1.2em;
+    }
+    li.activeOpt {
+      border-bottom:1px solid $color-tweet-theme;
+    }
+  }
+  .navIcons a {
+    display:inline-block;
+    padding: 8px 10px;
+    font-size: 14px;
+    color: #000000;
+    border-color:#bfbfbf;
+  }
+  .navIcons a.home {
+    background-color:$color-tweet-theme;
+    color:#fff;
+    padding: 8px 12px;
+    font-size:20px;
+  }
+  form.search{
+    margin-left:40%
+  }
+  input {
+    border-radius: 20px;
+    border: 1px solid #e3dfd8;
+    height: 25px;
+    margin-top: 12px;
+    padding: 4px 12px;
+    color:#c6c1b0;
+    min-width:150px;
+    background-color:$color-primary;
+    &:focus{
+     outline-color:$color-primary;
+    }
+  }
+  .searchIcon {
+    position:relative;
+    float:right
+  }
+  .searchIcon i{
+    position: absolute;
+    top: -25px;
+    right: 16px;
+    color:#e3dfd8;
+    cursor:pointer
+  }
+  .myAccount a {
+    overflow:hidden;
+    border:1px solid #bfbfbf;
+    margin-top:0.5em;
+    margin-right: 25px;
+    height: 45px;
+    width: 50px;
+  }
+  .twitterIcon {
+    margin-top:10px;
+    transform:scale(1);
+    transition: transform 0.5s ease;
+    &:hover{
+      transform:scale(2);
+    }
+    a{
+      font-size:35px;
+      color: $color-tweet-theme;
+    }   
+  }
+}
+
